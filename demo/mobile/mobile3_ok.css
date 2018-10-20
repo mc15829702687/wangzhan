@@ -1,0 +1,42 @@
+*{
+  margin:0 px;
+  padding:0 px;
+}
+
+#main{
+  width:7.5rem;
+/*   height:800px; */
+  margin:0 auto;
+  border:2px solid gray;
+  box-shadow: 10px 10px 5px #888888;
+}
+
+header{
+  width:7.5rem;
+  position: relative;
+}
+header img{
+  width:4.50rem;
+  padding:0.2rem;
+  height:3rem;
+}
+ul{
+  position: absolute;
+  top:0.04rem;
+  right:0.050rem;
+}
+li{
+  margin-top:0.1rem;  
+  font-size:0.2rem;
+}
+
+article{
+  text-align: center;
+  font-size:0.23rem;
+}
+footer{
+  text-align: center;
+  margin-top:0.1rem;
+  font-size:0.3rem;
+  
+}

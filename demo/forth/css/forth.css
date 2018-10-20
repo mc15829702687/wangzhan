@@ -1,0 +1,336 @@
+*{
+  padding:0px;
+  margin:0px;
+  list-style: none;
+  text-decoration: none;
+}
+body{
+  background:#e4ebe9 url(images/white_texture.png) repeat top left;
+  color:#000;
+  font-family: 'PT Sans Narrow', Arial, sans-serif;
+  font-size:13px;
+  min-height:800px;
+}
+
+a{
+  list-style: none;
+  text-decoration: none;
+  color:#000;
+}
+
+/* 招聘信息 */
+.article{
+  width:1200px;
+  height:300px;
+  margin:0 auto;
+  margin-top:20px;
+}
+.title{
+  text-align: center;
+  font-size:30px;
+}
+.text{
+  width:
+}
+.text{
+  float:left;
+  width:390px;
+  height:240px;
+  background:#E8E8E8;
+  margin-left:10px;
+}
+.title_son{
+  font-size:17px;
+  color:gray;
+  text-align: center;
+}
+/* 包含进度条的容器 */
+
+.container_ok{
+  float: left;
+  width:300px;
+  height:200px;
+  margin-top:10px;
+}
+.left{
+  float:left;
+  width:60px;
+  height:200px;
+}
+.left p{
+  margin-left:5px;
+  font-size:15px;
+  margin-top:16px;
+}
+.right{
+  float:right;
+  width:30px;
+  height:200px;
+}
+.right p{
+  font-size:15px;
+  margin-top:16px;
+}
+
+/* 薪资 */
+.title_son1{
+  font-size:20px;
+  text-align: center;
+}
+.salary{
+  width:1200px;
+  margin:0 auto;
+  display:-webkit-flex;
+  display:flex;
+}
+.afford{
+  margin-top:10px;
+  flex:0.498;
+  background:white;
+  margin-left:10px;
+}
+.afford span{
+  font-size:25px;
+  margin-left:10px;
+  color:#CD3333;
+}
+
+/* 招聘信息 */
+#fill{
+  width:1200px;
+  height:380px;
+  background:lightblue; 
+  margin:0 auto;
+  margin-top:10px;
+}
+#fill tr{
+  position: relative;
+  height:50px;
+  line-height:50px;
+  cursor: pointer;
+}
+#fill tr:hover{
+  background:lightgrey;
+}
+
+/* 底部 */
+.footer {
+    padding: 5em 0em;
+}
+.ftr-grid h3 {
+    font-size: 2em;
+    color: #000;
+    font-family: 'Oswald', sans-serif;
+}
+.ftr-grid p{
+    font-size:1em;
+    color:#7B7B7B;
+    line-height: 1.7em;
+}
+span.ftr-line {
+    background: #807D7D;
+    width: 60px;
+    height: 1px;
+    display: block;
+    margin: 1.5em 8em;
+}
+span.flm {
+   text-align: center;
+   margin: 1.5em auto;
+}
+span.flr {
+    text-align: right;
+    margin: 1.5em 0em 1.5em 12.5em;
+}
+.ftr-mid {
+    text-align: center;
+}
+.ftr-rit {
+    text-align: right;
+}
+.ftr-grid ul {
+    padding: 0px;
+    list-style: none;
+}
+.ftr-grid ul li {
+    display: inline-block;
+    margin: 0px 10px 0px 0px;
+}
+.ftr-grid ul li a span {
+    background: url(../images/ftr-icons.png)no-repeat;
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+}
+.ftr-grid ul li a span.fa {
+    background-position: 0px 0px;
+}
+.ftr-grid ul li a span.tw {
+    background-position: -42px 0px;
+}
+.ftr-grid ul li a span.gmail {
+    background-position: -84px 0px;
+}
+
+.ftr-grid ul li a span.fa:hover {
+    background-position: 0px 0px;
+    opacity: 0.8;
+}
+.ftr-grid ul li a span.tw:hover{
+    background-position: -42px 0px;
+    opacity: 0.8;
+}
+.ftr-grid ul li a span.gmail:hover {
+    background-position: -84px 0px;
+    opacity: 0.8;
+}
+/*--footer end here--*/
+.copy-right {
+    background:rgb(0, 188, 212);;
+    padding: 1.5em 0em;
+    text-align: center;
+}
+.copy-rights-main p{
+  font-size:1em;
+  color:#fff;
+}
+.copy-rights-main p a{
+  color:#fff;
+}
+.copy-rights-main p a:hover{
+  color:#000;
+}
+
+/* 浮动效果 */
+       .a {
+          cursor: help;
+          color:#6495ED;
+        }
+        .tooltip-box {
+            display: block;
+            background: #fff;
+            line-height: 1.6;
+            border: 1px solid #66CCFF;
+            color: #333;
+            padding: 20px;
+            font-size: 12px;
+            border-radius: 5px;
+            overflow: auto;
+            z-index:1000;
+        }
+
+#fudong{
+  float:left;
+  width:500px;
+  height:300px;
+  background:white;
+  border:solid lightgreen 3px;
+  display:block;
+}
+#fudong_top{
+  font-size:20px;
+  margin-top:20px;
+  margin-left:10px;
+}
+.jiantou{
+    list-style: none;
+    float:left;
+    width: 7px;
+    height: 7px;
+    border-top: 2px solid #ffffff;
+    border-right: 2px solid #ffffff;
+    transform: rotate(45deg);
+    background:green;
+    margin-top:10px;
+    margin-left:10px;
+}
+.fudong_left{
+  float:left;
+  margin-top:10px;
+  width:200px;
+  margin-left:10px;
+}
+.fudong_left span{
+  color:grey;
+}
+.fudong_left p{
+  margin-top:10px;
+}
+#fudong_bottom{
+  float:left;
+  width:500px;
+  height:80px;
+  margin-top:10px;
+}
+#fudong_bottom p{
+  margin-left:10px;
+}
+.fudong_hr{
+  width:250px;
+  height:1px;
+  background:lightgray;
+  margin:0 auto;
+  margin-top:10px;
+}
+
+.anniu{
+  z-index: 1000;
+	width: 40px;
+	height: 196px;
+	border: 1px solid #ccc;
+  position: fixed;
+	right: 0px;
+	top:200px; 
+  background:white;
+  box-shadow: 10px 10px 5px #888888;
+}
+.work{
+  text-align: center;
+  margin-top:10px;
+  cursor:pointer;
+}
+.work img{
+  width:80%;
+}
+.work_hr{
+  width:25px;
+  height:1px;
+  background:lightgray;
+  margin:0 auto;
+  margin-top:5px;
+}
+/* 微信显示框 */
+#weixin_show{
+  z-index: 1000;
+	width: 150px;
+	height: 160px;
+	border: 1px solid #ccc;
+  position: fixed;
+	right: 40px;
+	top:230px; 
+  background:white;
+  box-shadow: 10px 10px 5px #888888;
+  display: none;
+}
+#weixin_show input{
+  text-align: center;
+  font-size:12px;
+  color:gray;
+  margin-left:15px;
+  border:0;
+}
+.weixin_hr{
+  width:125px;
+  height:1px;
+  background:lightgray;
+  margin:0 auto;
+  margin-top:5px;
+}
+#weixin_show1{
+  width:100px;
+  height:100px;
+  background:pink;
+  margin:0 auto;
+  margin-top:2px;
+}
+

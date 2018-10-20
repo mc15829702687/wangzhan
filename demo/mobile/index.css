@@ -1,0 +1,348 @@
+
+*{
+  padding:0px;
+  margin:0px;
+  list-style:none;
+  text-decoration:none;
+}
+a{
+  color:white;
+}
+html {
+ font-family:Microsoft YaHei,Helvetica Neue,Helvetica,STHeiTi,Arial,sans-serif;
+ -ms-text-size-adjust:100%;
+ -webkit-text-size-adjust:100%;
+ font-size:62.5%;
+ line-height:1.5
+}
+body {
+ font-size:16px;
+ overflow-x:hidden;
+ min-width:320px;
+ background:#e8e8e8
+}
+
+
+
+#big{
+  width:7.50rem;
+  height:11.36rem;
+  margin:0 auto;
+}
+/*logo*/
+#header{
+  width:7.50rem;
+  height:3.48rem;
+  background:-moz-linear-gradient(left,black,#595f5d);
+  background:-webkit-linear-gradient(left,black,#595f5d);
+  background:-o-linear-gradient(left,black,#595f5d);
+  background:linear-gradient(left,black,#595f5d);
+}
+#nav1{
+  width:5.02rem;
+  height:0.80rem;
+  color:white;
+  margin-left:1.20rem;
+}
+#header #nav1 li{
+  float:left;
+  font-size:0.15rem;
+  font-family:微软雅黑;
+  font-weight: bold;
+  margin-left:0.50rem;
+  line-height:0.80rem;
+}
+#header #nav1 li img{
+  float:left;
+  height:0.80rem;
+  line-height:0.80rem;
+  margin-left:-0.50rem;
+}
+/*大图轮播*/
+#demo{
+  margin:0 auto;
+  width:5.02rem;
+  height:2.65rem;
+  background:yellow;
+  position:relative; 
+  overflow:hidden;
+  margin-left:1.20rem;
+}
+#demo1{
+  width:47.00rem;
+  height:2.65rem;
+  background:red;
+  position:absolute;
+}
+#demo1 img{
+  width:5.02rem;
+  height:2.65rem;
+  float:left;
+}
+#anniu{
+  margin:0 auto;
+  float:right;
+  z-index:10;
+  position:absolute;
+  right:0.50rem;
+  bottom:0.10rem;
+}
+
+.bg{
+  background:gray;
+}
+#left{
+  width:0.40rem;
+  height:2.65rem;
+  position:absolute;
+  cursor:pointer;
+}
+#left img{
+  position:absolute;
+  top:1.20rem;
+  width:0.40rem;
+  height:0.40rem;
+}
+#right{
+  width:0.40rem;
+  height:2.65rem;
+  position:absolute;
+  right:0rem;
+  cursor:pointer;
+}
+#right img{
+  position:absolute;
+  top:1.20rem;
+  width:0.40rem;
+  height:0.40rem;
+}
+/*观影顺序*/
+#nav2{
+  width:7.50rem;
+  height:0.80rem;
+  background:white;
+}
+.li{
+  font-size:14px;
+  font-family:微软雅黑;
+  float:left;
+  line-height: 0.80rem;
+  margin-left:1.00rem;
+  cursor:pointer;
+}
+#li{
+  float:left;
+  line-height:0.80rem;
+  font-size:17px;
+  font-weight: bold;
+  margin-left:1.00rem;
+}
+#time{
+  width:7.50rem;
+  height:3.00rem;
+  float:left;
+  overflow:hidden;
+}
+#news1,#news2,#news3{
+  width:7.50rem;
+  height:3.00rem;
+  float:left;
+  margin-left:0.02rem;
+}
+#ok{
+  width:22.60rem;
+  height:3.00rem;
+  float:left;
+}
+.top{
+  width:7.50rem;
+  height:1.49rem;
+  background:#283561;
+}
+.top li{
+  float:left;
+  width:0.93rem;
+  height:1.29rem;
+  margin-left:1.05rem;
+}
+.top li img{
+  float:left;
+  height:1.00rem;
+  margin-top:0rem;
+}
+#te{
+  margin-left:0.63rem;
+}
+.top p{
+  width:1.50rem;
+  height:0.19rem;
+  font-size:17px;
+  float:left;
+}
+.middle{
+  width:5.98rem;
+  height:0.29rem;
+  background:#0d223d;
+  float:left;
+  margin-left:0.73rem;
+  -webkit-transform:skew(-20deg);  
+  -moz-transform:skew(-20deg);  
+  -o-transform:skew(-20deg);  
+  -ms-transform:skew(-20deg);  
+  transform:skew(-20deg);  
+}
+.middle li{
+  float:left;
+  height:0.19rem;
+  margin-left:0.05rem;
+  font-size:13px;
+  line-height:0.29rem;
+}
+.first{
+  color:red;
+}
+.bottom{
+  width:7.50rem;
+  height:1.49rem;
+  background:#354b70;
+  margin-top:0.02rem;
+  font-size:17px;
+}
+.bottom li{
+  float:left;
+  width:0.93rem;
+  height:1.29rem;
+  margin-left:1.10rem;
+}
+.bottom li img{
+  float:left;
+  height:1.04rem;
+  margin-left:0.10rem;
+  margin-top:0.17rem;
+}
+#te1{
+  margin-left:1.53rem;
+}
+.bottom p{
+  width:1.20rem;
+  height:0.17rem;
+  float:left;
+  text-align:center;
+  margin-top:0.2rem;
+}
+.er0 p{
+  margin-top:-0.25rem;
+  width:2rem;
+  height:0.34rem;
+  font-size:14px;
+}
+.er2 p{
+  font-size:14px;
+}
+.zi0 li{
+  margin-left:0.70rem;
+  float:left;
+}
+.zi0 p{
+  width:1.20rem;
+  height:0.34rem;
+  margin-top:-0.25rem;
+  font-size:14px;
+}
+.zi2 p{
+  font-size:14px;
+}
+#another{
+  margin-left:0rem;
+}
+.zi1{
+  width:7.50rem;
+  height:0.34rem;
+  float:left;
+  margin-left:0.05rem;
+  float:left;
+}
+.zi1 li{
+  
+  float:left;
+  margin-left:-0.10rem;
+  font-size:12px;
+  line-height:0.29rem;
+}
+.zi2 li{
+  float:left;
+  width:0.93rem;
+  height:1.29rem;
+  margin-left:0.70rem;
+}
+/*漫威动漫*/
+article{
+  width:7.50rem;
+  height:2.97rem;
+  float:left;
+  font-size:17px;
+}
+article #p1{
+  width:7.50rem;
+  height:0.80rem;
+  font-size:17px;
+  font-family: 微软雅黑;
+  line-height:0.80rem;
+  margin-left:0.79rem;
+}
+article .manwei{
+  width:0.96rem;
+  height:1.51rem;
+  margin-left:1.28rem;
+  float:left;
+}
+article section{
+  width:7.50rem;
+  height:2.15rem;
+  float:left;
+  background:url(image/bg.jpg) 0 0 no-repeat;
+  background-size:cover;
+}
+article img{
+  margin-top:0.35rem;
+  width:0.96rem;
+  height:1.21rem;
+}
+article .p2{
+  width:2rem;
+  font-size:13px;
+}
+footer{
+  width:7.50rem;
+  height:1.13rem;
+  background:black;
+  clear:both;
+  font-size:0.2rem;
+  color:white;
+  text-align:center;
+  line-height:1.13rem;
+}
+@media screen and (max-width:750px)
+{
+  #nav2 li{
+    font-size:10px;
+    margin-left:0.7rem;
+  }
+  .top p{
+    font-size:8px;
+  }
+  .middle li{
+    font-size:7px;
+  }
+  .bottom p{
+    font-size:8px;
+  }
+  .manwei .p2{
+    font-size:10px;
+    float:left;
+    margin-left:-0.19rem;
+  }
+  #nav1 li{
+    font-size:0.15rem;
+  }
+}

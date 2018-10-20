@@ -1,0 +1,15 @@
+DROP TABLE IF EXISTS cms;
+;
+INSERT INTO cms VALUES('212','','','EEEE','209');
+INSERT INTO cms VALUES('211','','DDDD','','208');
+INSERT INTO cms VALUES('210','','','CCCC','209');
+INSERT INTO cms VALUES('209','','BBBB','','208');
+INSERT INTO cms VALUES('208','AAAA','','','');
+DROP TABLE IF EXISTS news;
+;
+INSERT INTO news VALUES('1','208','209','0','BBBB标题','宝鸡今日会出现暴雨！！！','2018-8-23','10','小马哥哥');
+INSERT INTO news VALUES('5','208','209','210','撒旦','阿斯达的<img src=\"/newscms/kingeditor/attached/image/20180823/20180823024447_94262.jpg\" alt=\"\" />','2018-08-23 10:45:01','455','撒嗒');
+INSERT INTO news VALUES('4','208','211','','发生的事333','大厦发达省份22','2018-08-23 10:42:42','56','第三方22');
+INSERT INTO news VALUES('6','208','211','','阿顺帆','暗示法','2018-08-23 11:18:34','3','玫瑰');
+INSERT INTO news VALUES('7','208','209','210','刘新元','牛逼<br />','2018-08-23 17:28:56','23','佚名');
+INSERT INTO news VALUES('9','208','0','0','小林','牛逼','2018-08-23 20:35:11','213','我企鹅企鹅');

@@ -1,0 +1,780 @@
+
+*{
+  margin:0;
+  padding:0;
+  list-style:none;
+}
+body{
+/*   background-image:url("image/bg.jpg"); */
+  background-size:100%;
+}
+.bg{
+  width:100%;
+  background-color: rgb(255,255,255);
+  background-size: cover;
+  box-shadow: rgba(7, 17, 27, 0.06) 0px 2px 8px 0px;
+  margin-top:-50px;
+}
+/*  大图轮播  */
+.one{
+  position:relative;
+  width:1200px;
+  margin:0 auto; 
+}
+.one #lun{
+   width:1200px;
+   position:relative;
+   overflow:hidden;  
+}
+.one #lun .datu{
+  position:relative;
+  width:400%;
+}
+.one #lun .an{
+  width:30%;
+  position:absolute;
+  bottom:2%;
+  left:44%;
+  z-index:2;
+}
+.one #lun .an p{
+  cursor:pointer;
+  margin-left:10%;
+  display:inline-block;
+  width:10px;
+  height:10px;
+  background-color:white;
+  border-radius:100%;
+  font-size:2px;
+  color:white;
+}
+.yan{
+  background:red;
+}
+#lun .datu  li{
+  width:25%;
+  float:left;
+}
+#lun ul li img{
+  width:1200px;
+  height:600px;
+}
+#lun ul::after{
+  content:"";
+  display:block;
+  clear:both;
+}
+.one span{
+  font-size:30px;
+  color:white;
+  position:absolute;
+  top:40px;
+  left:8%;  
+}
+.one .text{
+  color:#333;
+  font-family:楷体;
+  display:block;
+  width:18%;
+  height:30px; 
+  position:absolute;
+  top:20px;
+  right:2%;  
+  padding-left:1.5%;
+  line-height:20px;
+  border-radius:5px;
+}
+.one  .touch{
+  display:block;
+  width:25px;
+  height:30px;
+  position:absolute;
+  top:60px;
+  right:2%;  
+}
+.one .one1{
+  position:absolute;
+  left:46.5%;
+  top:50%;
+  margin-top:-150px;
+  display:none;
+ 
+}
+.one1 li{
+  width:100%;
+  margin-top:15px;
+}
+.one li a{
+  color:white;
+  text-decoration:none;
+  font-size:30px;
+  font-family:楷体;  
+}
+
+/*------------------------------- 第二部分 -----------------------------------*/
+.two{
+  width:1200px;
+  margin: 0 auto;
+  margin-top:30px; 
+}
+
+/*1、 网站班大佬的盒子 */
+.top1{
+  width:1200px;
+  height:30px;
+  margin-top:10px;
+}
+
+/* “网站班大佬” */
+.center{
+  width:200px;
+  height:30px;
+  float:left;
+  text-align: center;
+  font-size:30px;
+  font-family: 楷体;
+}
+
+/* 线 */
+.xian{
+  width:500px;
+  height:3px;
+  background-color: lightgrey;
+  border-radius:3px;
+  float:left;
+  margin-top:15px;
+}
+
+/* 2、励志语录  */
+ .top2{
+  width:50%;
+  margin:0 auto;
+  margin-top:30px;
+  padding:10px 5%;
+  text-align:center;
+  background-image: url("image/pic02.jpg");
+  background-size: 100%;
+  border-radius: 5%;
+  color: white;
+  font-family:楷体;
+  font-size:25px;
+}
+
+/* 3、 大佬信息展示  */
+.mid{
+  background:yellow;
+  margin-top:70px;
+  width:100%;
+  padding:10px;
+}
+/* 左边小盒子 */
+.mid .left{
+  border:solid 2px gray;
+  width:30%;
+  float:left;  
+}
+/* 中间的小盒子 */
+.mid .mid1{
+  border:solid 2px gray;
+  width:30%;
+  float:left;
+  margin-left:3%;
+}
+/* 右边的小盒子 */
+.mid .right{
+  border:solid 2px gray;
+  width:30%;
+  float:left;
+  margin-left:3%;
+}
+
+/* 图片位置 */
+.famous{
+  position:relative;
+  left:16%;
+  top:-45px;
+}
+/* 图片位置 */
+.ma,.bier{
+  position:relative;
+  left:16%;
+  margin-top:-35px;
+}
+.bier{
+  position:relative;
+  bottom:-50px;
+}
+
+.xx{
+  width:100%;
+  height:2px;
+  background-color:gray;
+}
+.xin{
+  margin-left:3%;
+}
+.yy{
+  width:100%;
+  height:2px;
+  background-color:red;
+  margin-top:15px;
+  
+}
+.jian{
+  height:60px;
+}
+
+.jian span{
+  font-size:20px;
+  font-family:楷体;
+  margin-left:8%;
+}
+.mid::after{
+  display:block;
+  content:"";
+  clear:both;
+  height:0px;
+}
+
+.two .top1 .tu{
+  width:20%;
+  float:left;
+  position:relative;
+  top:-25px;
+  
+}
+
+.two .top1 .tu span{
+  display:block;
+  width:100%;
+  position:absolute;
+  color:white;
+  z-index: 5;
+  font-size:20px;
+  left:25%;
+  top:12px;
+}
+.two .top1::after{
+  content:"";
+  display:block;
+  clear:both;
+}
+
+
+
+/* -------------------------------------第三部分--------------------------------- */
+.all{
+  width:100%;
+  height:auto;
+  box-shadow: rgba(7, 17, 27, 0.06) 0px 15px 4px 0px;
+  background:#f8fafc;
+  margin-top:-30px;
+}
+.three{
+  width:1200px;
+/*   height:840px; */
+  margin: 0 auto;
+  margin-top:50px; 
+ 
+}
+
+/* 包含左边旋转的方块和右边的文字 */
+.three .midden2{
+  margin-top:0px;
+  width:100%;
+  height:620px;
+}
+/* 转动的方块 */
+.three .midden2 .left{
+  width:25%;
+  float:left;
+  margin-left:10%;
+  margin-top:80px;
+}
+
+/* 右边的文字 */
+.three .midden2  .right{
+  padding:20px;
+  width:50%;
+  float:left;
+  margin-left:5%;
+  font-size:20px;
+  font-family:楷体;
+}
+/* 标题 */
+.title{
+  font-size:25px;
+  color:#696969;
+}
+.three .midden2::after{
+  content:"";
+  clear:both;
+  display:block;
+}
+
+/* 网站简介内容 */
+.text{
+    color:#00CD00;
+}
+.course_show{
+  width:600px;
+  margin-top:15px;
+}
+/* 课程简介 */
+.course{
+  float:left;
+  width:190px;
+/*   height:200px; */
+  margin-left:5px;
+  margin-top:15px;
+  cursor: pointer;
+}
+/* 图片 */
+.course img{
+  width:66px;
+  height:66px;
+  border-radius: 50%;
+  margin-left:33%;
+}
+.course_title{
+  text-align: center;
+  margin-top:10px;
+}
+.course_p{
+  font-size:14px;
+  color:gray;
+  text-align:center;
+  margin-top:5px;
+}
+
+/* ------------------------------------第四个板块----------------------------- */
+.four{ 
+  width:1200px;
+  margin:0 auto;
+  clear: both;
+  margin-top:-105px;
+  height:auto;
+  background:#f8fafc;
+  
+}
+
+/* 包含内容的大盒子 */
+.show{
+  width:1200px;
+  height:850px;
+  margin:0 auto;
+  margin-top:20px;
+}
+
+/* 程序员励志短语 */
+.show_left{
+  float:left;
+  width:380px;
+  height:600px;
+/*   background:pink; */
+}
+.show_left section{
+  width:380px;
+  height:270px;
+  margin-top:20px;
+  background:white;
+  border-radius:15px; 
+/*   opacity: 0.7; */
+}
+/* 常见面试题 */
+.show_middle{
+  float:left;
+  width:380px;
+  height:700px;
+/*   background:pink; */
+  margin-left:30px;
+}
+.show_middle section{
+  width:380px;
+  height:210px;
+  margin-top:20px;
+  background:white;
+  border-radius:15px;
+/*   opacity: 0.7; */
+}
+/* 所学到的知识 */
+.show_right{
+  float:left;
+  width:380px;
+  height:830px;
+/*   background:pink; */
+  margin-left:30px;
+}
+.show_right section{
+  width:380px;
+  height:180px;
+  margin-top:20px;
+  background:white;
+  border-radius:15px;
+/*   opacity: 0.7; */
+}
+
+.show .mark{
+  float:left;
+  width:100px;
+  height:30px;
+  background:lightgreen;
+  border-radius:8px;
+  text-align: center;
+  line-height: 30px;
+  font-family:楷体;
+  margin-left:20px;
+  margin-top:10px;
+}
+
+/* 左边图片 */
+.show .story_left{
+  clear:both;
+  width:100px;
+  height:auto;
+  float:left;
+  margin-left:20px;
+}
+.story_left img{
+  width:100%;
+  height:100%;
+}
+
+/* 右边内容 */
+.show .story_right{
+  float:right;
+  width:220px;
+  height:70px;
+  margin-right:20px;
+  font-size:15px;
+  color:green;
+}
+.story_middle{
+  float:left;
+  width:80%;
+  height:133px;
+  margin-top:10px;
+  overflow:hidden;
+  font-size:14px;
+  margin-left:10%;
+}
+.show_another{
+  float:right;
+  width:100px;
+  height:30px;
+  text-decoration: none;
+}
+
+/* 常见面试题 */
+.show_middle .offer{
+  width:85%;
+  margin-left:7.5%;
+  color:#4F94CD;
+  float:left;
+  margin-top:10px;
+}
+.offer_text{
+  float:left;
+  width:85%;
+  height:110px;
+  margin-top:5px;
+  margin-left:7.5%;
+  }
+.offer_text p{
+  font-size:18px;
+  margin-bottom:5px;
+}
+.offer_text p:hover{
+  color:blue;
+  cursor:pointer;
+}
+
+/* 下边内容 */
+.offer_bottom,.offer_bottom_ok{
+  float:right;
+  width:85%;
+  margin-right:5%;
+  margin-top:40px;
+}
+.offer_bottom span,.offer_bottom_ok span{
+  width:10%;
+  margin-left:15%;
+  font-size:15px;
+  color:lightblue;
+}
+.offer_bottom li,.offer_bottom_ok li{
+  float:left;
+}
+
+/* 所学的知识 */
+.study_title{
+  width:85%;
+  margin-left:7.5%;
+  color:#4F94CD;
+  float:left;
+  margin-top:10px;
+}
+.study_middle{
+  height:100px;
+  width:85%;
+  margin-left:7.5%;
+  margin-top:10px;
+}
+.study_middle .span1{
+  float:left;
+  width:200px;
+  margin-top:10px;
+  cursor:pointer;
+  font-size:18px;
+}
+.study_middle img{
+  float:right;
+  width:100px;
+  height:auto;
+  background:yellow;
+  margin-top:10px;
+}
+.study_middle span:hover{
+  color:blue;
+}
+
+/* --------------------------------------第五部分------------------------------- */
+.five{
+  width:1200px;
+  margin:0 auto;
+}
+/* 包含明星盒子 */
+.star{
+  width:1200px;
+  height:270px;
+  margin:0 auto;
+  background:#EEE9E9;
+  margin-top:50px; 
+}
+.star li{
+  float:left;
+  width:200px;
+  height:230px;
+  margin-left:30px;
+  background:#4D555D;
+  border-radius:8px;
+  overflow: hidden;
+  cursor:pointer;
+  margin-top:20px;
+}
+/* 上半部分图片 */
+.star_top{
+  position: absolute;
+  width:100px;
+  height:100px;
+  margin:0 auto;
+  margin-top:-30px;
+  margin-left:55px;
+}
+.star_top img{
+  position: absolute;
+  width:90px;
+  height:90px;
+  border-radius: 50%;
+}
+
+/* 中间标签页 */
+
+.star_middle{
+  float:left;
+  margin-top:60px;
+  width:100%;
+  height: 55px;  
+}
+/* 姓名 */
+.star_middle .name{
+  text-align: center;
+  color:black;
+  font-size:20px;
+  margin-top:8px;
+}
+/* 内容 */
+.star_middle .star_text{
+  text-align: center;
+  font-size:13px;
+  color:gray;
+  margin-top:3px;
+}
+/* 信息 */
+.star_bottom{
+  float:left;
+  width:80%;
+  height:75px;
+  font-size:13px;
+  margin-top:10px;
+  margin-left:10%;
+  color:gray;
+} 
+
+@keyframes rotate{
+  0%{
+    transform:rotateX(0deg) rotateY(0deg);
+  }
+  100%{
+    transform:rotateX(360deg) rotateY(360deg);
+  }
+}
+
+.three .midden2 .left{
+ 
+  perspective: 1000px; /* 视图距元素的距离 相当于摄像机 */
+}
+.cube{
+  width:200px;
+  height:200px;
+  position:relative;
+  color:#fff;
+  font-size:36px;
+  font-weight:bold;
+  text-align:center;
+  line-height:200px;
+  transform-style:preserve-3d; /* 默认flat 2D */
+  transform:rotateX(-30deg) rotateY(-70deg); 
+  animation:rotate 20s infinite linear; /*播放时间 播放次数为循环 缓动效果为匀速 */
+}
+.cube img{
+  width:100%;
+  height:100%;
+}
+.cube > div{
+  width:100%;
+  height:100%;
+  border:1px solid #fff;
+  position:absolute;
+  background-color:#333;
+  opacity:0.6;
+  transition:transform 0.4s ease-in;
+}
+.cube .out-front{
+  transform: translateZ(100px);
+}
+.cube .out-back{
+  transform: translateZ(-100px) rotateY(180deg);
+}
+.cube .out-left{
+  transform: translateX(-100px) rotateY(-90deg);
+}
+.cube .out-right{ 
+  transform: translateX(100px) rotateY(90deg);
+}
+.cube .out-top{
+  transform: translateY(-100px) rotateX(90deg);
+}
+.cube .out-bottom{
+  transform: translateY(100px) rotateX(-90deg);
+  
+  }
+@media screen and (max-width:414px){
+ 
+  .one .one1{
+    margin-top:
+  }
+  .one .one1 li{
+    margin-top:2px
+  }
+  .one .one1 li a{
+    font-size:8px;
+  }
+  .one #lun .an{
+     bottom:10px;
+  }
+  .two .top1 .tu img{
+    margin-top:12px;
+    width:150%;
+  }
+  .two .top1 .tu span{
+    font-size:10px
+  }
+  .two{
+    font-size:10px;
+  }
+  .two .mid .left,.two .mid .right{
+    display:none;
+  }
+  .two .mid {
+    margin-left:-2%;
+  }
+  .two .mid .mid1{
+    margin:0 auto;
+    width:100%;
+    border:solid 0px ;
+    
+  }
+  .two .mid .mid1 img{
+    display:block;
+    width:50%;
+}
+  .three{
+    font-size:15px;
+  }
+  .three .top .tu  span{
+    font-size:15px;
+  }
+  .three .top .tu img{
+    width:150%;
+    margin-top:12px;
+  }
+  .three .left{
+    display:none;
+  }
+  .three .midden2  .right{
+    width:80%;
+    margin:0 auto;
+  }
+  .four .top .tu img{
+    width:150%;
+    margin-top:12px;
+  }
+  .four .top .tu span{
+    font-size:10px;
+    margin-left:15%;
+  }
+  .four{
+    font-size:20px;
+  }
+ .four .midden2 .right{
+    display:none;
+  }
+  .four .midden2 .left{
+    width:90%;
+    margin:0 auto;
+      
+  }
+ .four .midden2 .left h1{
+   font-size:12px;
+   
+  }
+  .four .midden2 .left p{
+    font-size:10px
+  }
+  .five .right{
+    display:none;
+    
+  }
+
+  .five .bottom .left1{
+    width:40%;
+  }
+  .five .bottom .midd{
+    width:40%;
+  }
+  .five .top3 .tu img,.five .top4 .tu img{
+    width:150%;
+    margin-top:13px
+  }
+  .five .top4{
+    margin-top:100px;
+  }
+  .five .top3 .tu span,.five .top4 .tu span{
+    font-size:16px;
+    
+  }
+  
+}
+  
+  

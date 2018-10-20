@@ -1,0 +1,354 @@
+/*--
+	Author: W3layouts
+	Author URL: http://w3layouts.com
+	License: Creative Commons Attribution 3.0 Unported
+	License URL: http://creativecommons.org/licenses/by/3.0/
+--*/
+
+/*-- Reset Code --*/
+body {
+	padding: 0;
+	margin: 0;
+	background: #FFF;
+	font-family: 'open Sans', sans-serif;
+}
+body a {
+	transition: 0.5s all;
+	-webkit-transition: 0.5s all;
+	-moz-transition: 0.5s all;
+	-o-transition: 0.5s all;
+	-ms-transition: 0.5s all;
+	text-decoration: none;
+}
+body a:hover {
+	text-decoration: none;
+}
+body a:focus, a:hover {
+	text-decoration: none;
+}
+input[type="button"], input[type="submit"] {
+	transition: 0.5s all;
+	-webkit-transition: 0.5s all;
+	-moz-transition: 0.5s all;
+	-o-transition: 0.5s all;
+	-ms-transition: 0.5s all;
+}
+h1, h2, h3, h4, h5, h6 {
+	margin: 0;
+	padding: 0;
+	text-align: center;
+	font-family: 'Josefin Sans', sans-serif;
+	letter-spacing:1px;
+}
+p {
+	margin:0;
+}
+ul {
+	margin:0;
+	padding:0;
+}
+label {
+	margin:0;
+}
+a:focus, a:hover {
+	text-decoration: none;
+	outline: none
+}
+img {
+	width: 100%;
+}
+/*-- //Reset Code --*/
+/*-- header --*/
+input[type="submit"],.header_left ul li a,.agile_back_home a,.agileits_social h5 a,.w3l_header_left ul li a,.agileits_tags ul li a,.login h3 a,.w3agile_forgot h4 a,.reply a,.w3agile_grid_right h3 a,.w3_comments ul li a,.agileits_recent_posts_gridr h4 a,.agileits_twitter_posts ul li a,.wthree_contact_left input[type="reset"],.w3l_services_grid1 h4 a,.wthree_contact_left ul li a,.w3l_services_grid1 span,.w3ls_services_bottom_left_gridl h4 a,.services-breadcrumb ul li a,.w3agile_footer_grid ul li a,.agileinfo_copy_right_left p a,.w3l_header_right ul li a,.details a,.agileits_news_grid_left_gridr h4 a{
+	transition: .5s ease-in;
+	-webkit-transition: .5s ease-in;
+	-moz-transition: .5s ease-in;
+	-o-transition: .5s ease-in;
+	-ms-transition: .5s ease-in;
+}
+.header {
+    background: #FFC107;
+}
+.w3l_header_left{
+	float:left;
+	margin-left:60px;
+}
+.w3l_header_left ul{
+	padding: 0em 0 0 1.5em;
+    border-left: 1px solid #fff;
+}
+.w3l_header_left ul li{
+	display: inline-block;
+    border-right: 1px solid #fff;
+    color: #fff;
+    padding: 1em 1.5em 1em 0;
+}
+.w3l_header_left ul li span{
+	padding: .5em;
+    margin-right: 1em;
+    border: 1px solid #fff;
+}
+.w3l_header_left ul li a{
+	color:#fff;
+	text-decoration:none;
+}
+.w3l_header_left ul li a:hover{
+	color:#212121;
+}
+.w3l_header_left ul li:first-child {
+    margin-right: 1.5em;
+}
+.w3l_header_right{
+	float:right;
+	margin-right:50px;
+}
+.w3l_header_right ul li{
+	display:inline-block;
+	margin-right:.5em;
+}
+.w3l_header_right ul li a{
+	text-transform: uppercase;
+    color: #fff;
+    padding: .5em 1em;
+    text-decoration: none;
+    border: 1px solid #fff;
+	display: block;
+}
+.w3l_header_right ul li a:hover {
+    background: #212121;
+    border-color: #212121;
+    color: #ffc107;
+}
+.w3l_header_right ul li a span{
+	padding-right:1em;
+}
+.w3l_header_right ul {
+    padding: .7em 0 0;
+}
+#small-dialog h3,#small-dialog2 h3 {
+    color: #000;
+    font-size: 30px;
+	margin-bottom:30px;
+}
+#small-dialog input[type="text"],#small-dialog input[type="password"],#small-dialog2 input[type="text"],#small-dialog2 input[type="password"]{
+	padding:12px;
+	font-size:14px;
+	border:2px solid #000;
+	background:transparent;
+	outline:none;
+	width:100%;
+	margin-bottom:20px;
+}
+form ul {
+	float: left;
+}
+ul li {
+	list-style: none;
+	display: inline-block;
+}
+ul li input[type="checkbox"] {
+	display: none;
+}
+ul li input[type="checkbox"]+label {
+	position: relative;
+	padding-left: 25px;
+	border: #F0F8FF;
+	color: #000;
+	display: inline-block;
+	font-size: 13px;
+
+}
+ul li input[type="checkbox"]+label span:first-child {
+	width: 17px;
+	height: 15px;
+	display: inline-block;
+	border: 1px solid #000;
+	position: absolute;
+	top: 1px;
+	left: 4px;
+	bottom: 4px;
+}
+ul li input[type="checkbox"]:checked+label span:first-child:before {
+	content: "";
+	background: url(../images/tick.png)no-repeat;
+	position: absolute;
+	left: 2px;
+	top: 2px;
+	font-size: 10px;
+	width: 10px;
+	height: 10px;
+}
+
+form a {
+	color: #000;
+	float: right;
+	font-size: 13px;
+
+}
+#small-dialog, #small-dialog2 {
+	background:#00bcd4;
+	padding:50px;
+}
+#small-dialog input[type="submit"], #small-dialog2 input[type="submit"] {
+	background:#000;
+	border:none;
+	padding:10px 15px;
+	color:#fff;
+	font-size:14px;
+	outline:none;
+	margin-top:30px;
+	width:100%;
+}
+#small-dialog input[type="submit"]:hover, #small-dialog2 input[type="submit"]:hover {
+	background: #FFC107;
+}
+#small-dialog a:hover{
+	color:#FFC107;
+}
+ ::-webkit-input-placeholder{
+color:#000 !important;
+}
+/*-- //header --*/
+
+/*-- logo-navigation --*/
+.logo-navigation-w3layouts{
+	background:#fff;
+	padding:20px 0px;
+}
+.logo-w3{
+	width:30%;
+	float:left;
+	position: absolute;
+	left:40px;
+}
+.logo-w3 img{
+	width:15%;
+	margin-top:-10px;
+}
+.logo-w3 h1{
+	color:#FFC107;
+	font-size:35px;
+	text-align:left;
+	text-transform:uppercase;
+}
+.navigation{
+	width:70%;
+	float:right;
+}
+.navbar {
+	min-height: 40px;
+}
+.navbar-default {
+	background-color: transparent;
+	border-color: transparent;
+	border: none;
+	margin-bottom: 0;
+	text-align: center;
+}
+
+.hover-effect ul {
+	-webkit-transform: translateZ(0);
+	transform: translateZ(0);
+	margin-top:9px;
+	text-align:right;
+}
+.hover-effect li {
+	overflow: hidden;
+	position: relative;
+	display: inline-block;
+}
+
+.hover-effect li:before, .hover-effect li:after {
+	display: block;
+}
+
+.hover-effect li:before {
+	bottom: 0%;
+}
+
+.hover-effect li:after {
+	bottom: 50%;
+}
+
+.hover-effect a {
+	backface-visibility: hidden;
+	display: block;
+	padding: 8px 20px;
+	position: relative;
+	text-align: center;
+	text-decoration: none;
+	line-height: normal;
+	font-size: 14px;
+	color: #FFC107;
+}
+.hover-effect a.active{
+	background:#000;
+	color:#FFC107;
+}
+.hover-effect a:before {
+	bottom: 25%;
+}
+
+.hover-effect a:after {
+	bottom: 75%;
+}
+.hover-effect li:before, .hover-effect li:after, .hover-effect a:before, .hover-effect a:after {
+	background-color: #000;
+	position: absolute;
+	height: 25%;
+	left: 0%;
+	right: 100%;
+	content: '';
+	z-index: -1;
+	opacity: 0;
+	-webkit-transition: all 0.3s ease;
+	transition: all 0.3s ease;
+	color:#FFC107;
+}
+
+.hover-effect li:before {
+	-webkit-transition-delay: 0s;
+	transition-delay: 0s;
+}
+
+.hover-effect li:after {
+	-webkit-transition-delay: 0.1s;
+	transition-delay: 0.1s;
+}
+
+.hover-effect a:before {
+	-webkit-transition-delay: 0.05s;
+	transition-delay: 0.05s;
+}
+
+.hover-effect a:after {
+	-webkit-transition-delay: 0.15s;
+	transition-delay: 0.15s;
+}
+
+.hover-effect li:hover:before, .hover-effect li.current:before, .hover-effect li:hover:after, .hover-effect li.current:after, .hover-effect li:hover a:before, .hover-effect li.current a:before, .hover-effect li:hover a:after, .hover-effect li.current a:after {
+	left: 0;
+	right: 0;
+	opacity: 1;
+}
+
+.hover-effect li:hover:before, .hover-effect li.current:before {
+	-webkit-transition-delay: 0s;
+	transition-delay: 0s;
+
+}
+
+.hover-effect li:hover:after, .hover-effect li.current:after {
+	-webkit-transition-delay: 0.2s;
+	transition-delay: 0.2s;
+}
+
+.hover-effect li:hover a:before, .hover-effect li.current a:before {
+	-webkit-transition-delay: 0.1s;
+	transition-delay: 0.1s;
+}
+
+.hover-effect li:hover a:after, .hover-effect li.current a:after {
+	-webkit-transition-delay: 0.3s;
+	transition-delay: 0.3s;
+}

@@ -1,0 +1,709 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>首页</title>
+	<link rel="stylesheet" type="text/css" href="mc.css">
+  <link rel="stylesheet" type="text/css" href="demo.css">
+
+  <!-- 画廊 -->
+  <link rel="stylesheet" href="show.css">
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+
+  <!-- 大图轮播遮罩层 -->
+	<script type="text/javascript" src="js/mc.js"></script>
+
+  <!-- 底部 -->
+  <link href="second/css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+  <link rel="stylesheet" href="second/css/style.css" type="text/css" media="all" />
+  <script src='second/js/jquery.min.js'></script>
+
+  <link href="second/css/animate.css" rel="stylesheet" type="text/css" media="all">
+    <script src="second/js/wow.min.js"></script>
+    <script>
+     new WOW().init();
+    </script>
+</head>
+<body>
+  <!-- 第一个板块 -->
+  <div class="one">
+      <!-- 大图轮播 -->
+      <div id="lun">
+      <ul class="datu" id="datu">
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          
+          <script>
+          //1、利用ajax从后台提取大图的数据 
+            function datu(){
+            $.ajax({
+            url:'ajax/datu.php',
+            type:'post',
+            data:{'id':'215'},
+            dataType:'json',
+            success:function(data){
+              $('#datu li:eq(0)').html(data[0]['content']);
+              $('#datu li:eq(1)').html(data[1]['content']);
+              $('#datu li:eq(2)').html(data[2]['content']);
+              $('#datu li:eq(3)').html(data[0]['content']);
+            }});
+            }
+            datu();
+            </script>
+       </ul>
+       <!--按钮 -->
+        <div class="an">
+	           <p>1</p>
+	           <p>2</p>
+	           <p>3</p>
+	       </div>
+        </div>
+      <!-- study文字 -->
+    	  <span>study</span>
+    	  <input type="text" class="text" placeholder="what do you what to learn?" name="search"/>
+    	  <input type="button" class="touch"  value="三">
+      <!-- 导航栏 -->
+  	  <div id="show" class="one1">
+  	  	<li><a href="">网站首页</a></li>
+  	  	<li><a href="second.php">网站课程</a></li>
+  	  	<li><a href="third.html">网站前景</a></li>
+        <li><a href="forth.html">招聘信息</a></li>
+  	  	<li><a href="fifth.html">佳作分享</a></li>
+  	  	<li><a href="admin/message.php">解疑答惑</a></li>	
+  	  	<li><a href="./admin/login/login1.php" target='_blank'>系统登录</a></li>
+  	  </div>
+  </div> 
+
+  <!-- 第二个板块 -->
+  <div class='all'>
+  <section class="two">
+    <!-- 每个板块页面的开头 -->
+    	<div class="top1">
+        <section class="xian "></section>
+    		<section class="center">网站班大佬</section>
+        <section class="xian "></section>
+    		<!-- <p class="xian xian2"></p> -->
+    	</div>
+    	<div class="top2">
+
+      <!-- 程序员励志语录 -->
+          <script>
+           function effort_title(){
+
+              // 1、创建一个通信对象
+              if(window.XMLHttpRequest)
+              {
+                var xmlhttp = new XMLHttpRequest();
+
+              }else{
+                var xmlhttp = new ActiveXObject('Microsoft.XMLHTTP');
+              }
+
+              // 2、判断服务器有么有响应成功
+              xmlhttp.onreadystatechange = function(){
+                if(xmlhttp.readyState==4 && xmlhttp.status==200)
+                {
+                  var title = document.getElementsByClassName('top2');
+                  // alert(typeof(xmlhttp.responseText));
+                  var array = JSON.parse(xmlhttp.responseText);
+                  for(var i=0;i<title.length;i++)
+                  {
+                    // alert(typeof(xmlhttp.responseText));
+                    // alert(xmlhttp.responseText);
+                    title[i].innerHTML = array[i];
+                    
+                  }
+
+                }
+              }
+              xmlhttp.open("post","ajax/ajax_title.php",true);
+
+              xmlhttp.setRequestHeader("Content-Type","application/x-www-form-urlencoded; charset=gb2312")  
+              var a='id=216';
+              xmlhttp.send(a);
+           }
+           effort_title();
+          </script>
+    	</div>
+
+      <!-- 大佬信息展示 -->
+    	<div class="wrap" id="wrap"></div>
+  </section>
+  </div>
+
+  <!-- 第三个板块 -->
+ <div class='bg'>
+  <section class="three">
+  <!-- 板块开头 -->
+  	<div class="top1">
+        <section class="xian "></section>
+        <section class="center">网站体系</section>
+        <section class="xian "></section>
+    </div>
+    <!-- 开头结束 -->
+    <!-- 中间文字展示 -->
+  	<div class="top2"></div>
+
+<!-- ================================================================== -->
+<!-- ++++++++++++++++++++ 第三板块的ajax  +++++++++++++++ -->
+<!-- ================================================================== -->
+    <script>
+          //1、利用ajax从后台提取图片的数据 
+            function xuanzhuan(){
+            $.ajax({
+            url:'ajax/xuanzhuan.php',
+            type:'post',
+            data:{'id':'224'},
+            dataType:'json',
+            success:function(data){
+             for(var i=0;i<data[0].length;i++)
+             {
+              $('.cube div').eq(i).html(data[0][i]);
+             }
+            }});
+            }
+
+          // 2、利用ajax从后台提取互联网简介的数据 
+            function internet(){
+               $.ajax({
+                url:'ajax/internet.php',
+                type:'post',
+                data:{'id':'222'},
+                dataType:'json',
+                success:function(data){
+                 $('#internet span').html(data.content);
+                }});
+            }
+
+            // 3、利用ajax从后台提取网站课程简介的数据 
+            function course(){
+               $.ajax({
+                url:'ajax/course.php',
+                type:'post',
+                data:{'id':'223'},
+                dataType:'json',
+                success:function(data){
+                 for(var i=0,j=0;i<data.length;i+=2,j++)
+                 {
+                  $('.course span').eq(j).html(data[i][0]);
+                  $('.course .course_title').eq(j).html(data[i+1]);
+                  $('.course .course_p').eq(j).html(data[i][1]);
+                 }
+
+                }});
+            }
+
+            internet();
+            xuanzhuan();
+            course();
+            </script>
+    <div  class="midden2">
+    <!-- 模仿展示 -->
+  	   <div class="left">
+           <div class="cube">
+    		      <div class="out-front"></div>
+    		      <div class="out-back"></div>
+    		      <div class="out-left"></div>
+    		      <div class="out-right"></div> 
+    		      <div class="out-top"></div>
+		          <div class="out-bottom"></div>
+	         </div>
+  	   </div>
+    <!-- 模仿展示完毕 -->
+  	<div class="right">
+  		<p class="title">网站简介</p>
+  		<hr/>
+      <section class="show_inter">
+  		<p class="text" id="internet">
+  			&nbsp;&nbsp;&nbsp;&nbsp;<span></span>
+  			<hr/>
+  		</p>
+      </section>
+  		<p class="title">网站课程</p>
+        <div class='course_show' style='height:90px;'>
+      		<section class="course">
+              <span></span>
+              <p class="course_title"></p>
+              <p class="course_p"></p>
+          </section>
+
+          <section class="course">
+              <span></span>
+              <p class="course_title"></p>
+              <p class="course_p"></p>
+          </section>
+
+          <section class="course">
+              <span></span>
+              <p class="course_title"></p>
+              <p class="course_p"></p>
+          </section>
+        </div>
+  	 </div>
+    </div>
+  </section> 
+</div>
+  <!-- 第四个板块 -->
+
+  <div class='all' style='margin-top:110px;clear:both;'>
+  <article class="four">
+  	 <!-- 板块开头 -->
+    <div class="top1">
+        <section class="xian"></section>
+        <section class="center">网站手记</section>
+        <section class="xian"></section>
+    </div>
+    <!-- 开头结束 -->
+  	<div class="top2"></div>
+
+    <!-- ++++++++++++++++++++++++ 手记ajax  +++++++++++++++++++++++++++ -->
+    <script>
+      
+      function story(){
+            $.ajax({
+            url:'ajax/story.php',
+            type:'post',
+            data:{'id':'218'},
+            dataType:'json',
+            success:function(data){
+             
+             $('.mark:eq(0)').html(data[1]);
+             $('.mark:eq(1)').html(data[3]);
+
+             $('.story_left:eq(0)').html(data[0][0]);
+             $('.story_left:eq(1)').html(data[2][0]);
+
+             $('.story_right:eq(0)').html(data[0][1]);
+             $('.story_right:eq(1)').html(data[2][1]);
+
+             $('.story_middle span:eq(0)').html(data[0][2]);
+             $('.story_middle span:eq(1)').html(data[2][2]);
+             
+            
+            }});
+            }
+            story();
+
+    </script>
+    <!-- 手记 -->
+    <section class="show">
+      <!-- /* 程序员小信息 */ -->
+        <div class="show_left">
+          <section>
+              <div class="demo"><p class="mark"></p></div>
+              <p class="show_text">
+                <section class="story_left"></section>
+                <section class="story_right"></section> 
+              </p>
+
+              <p class="story_middle">
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span></span> <a class="show_another" href="./xiangqing/xiangqing.php?id=282">了解更多>>></a>
+              </p>    
+          </section>
+
+          <section>
+              <p class="mark"></p>
+              <p class="show_text">
+                <section class="story_left"></section>
+                <section class="story_right"></section>
+              </p>
+
+              <p class="story_middle">
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span></span> <a class="show_another" href="./xiangqing/xiangqing.php?id=283">了解更多>>></a>
+              </p>    
+          </section>
+        </div>
+      
+        <!-- /* 常见面试题 */ -->
+         <!-- ++++++++++++++++++++++++ 面试ajax  +++++++++++++++++++++ -->
+    <script>
+      
+      function offer(){
+            $.ajax({
+            url:'ajax/offer.php',
+            type:'post',
+            data:{'id':'219'},
+            dataType:'json',
+            success:function(data){
+             
+             for(var i=0;i<data.length;i++)
+             {
+
+                $('.offer_text p').eq(i).html(data[i]['title']);
+                $('.offer_text span').eq(i).html(data[i]['content']);
+                $('.offer_bottom .liulan').eq(i).html(data[i]['hit']);
+                $('.offer_bottom .tuijian').eq(i).html(data[i]['tuijian']);
+             }
+
+            }});
+            }
+            offer();
+
+    </script>
+        <div class="show_middle">
+          <section>
+          <div class="mark1"> 
+            <p class="offer">常见面试题</p>
+          </div>
+          <div class="offer_text">
+          <p></p>
+          <span></span>
+          </div>
+          <div class="offer_bottom"><span>浏览  <label for="" class='liulan'></label></span><span>推荐 <label for="" class='tuijian'></label></span><a href="./xiangqing/xiangqing.php?id=280"><span style="cursor:pointer;">阅读全文</span></a></div>
+          </section>
+
+          <section>
+          <div class="mark1"> 
+            <p class="offer">常见面试题</p>
+          </div>
+          <div class="offer_text">
+          <p></p>
+          <span></span>
+          </div>
+          <div class="offer_bottom"><span>浏览  <label for="" class='liulan'></label></span><span>推荐 <label for="" class='tuijian'></label></span><a href="./xiangqing/xiangqing.php?id=278"><span style="cursor:pointer;">阅读全文</span></a></div>
+          </section>
+
+
+           <section>
+          <div class="mark1"> 
+            <p class="offer">常见面试题</p>
+          </div>
+          <div class="offer_text">
+          <p></p>
+          <span></span>
+          </div>
+          <div class="offer_bottom"><span>浏览  <label for="" class='liulan'></label></span><span>推荐 <label for="" class='tuijian'></label></span><a href="./xiangqing/xiangqing.php?id=281"><span style="cursor:pointer;">阅读全文</span></a></div>
+          </section>
+        </div>
+        
+  <!-- ++++++++++++++++++++++++ 所学的知识ajax  +++++++++++++++++++++ -->
+    <script>
+      
+      function knowlege(){
+            $.ajax({
+            url:'ajax/knowlege.php',
+            type:'post',
+            data:{'id':'220'},
+            dataType:'json',
+            success:function(data){
+             
+             for(var i=0,j=0;i<data.length;i+=4,j++)
+             {
+
+                $('.study_title').eq(j).html(data[i+1]);
+                $('.study_middle .span1').eq(j).html(data[i][0]);
+                $('.study_middle .4').eq(j).html(data[i][1]);
+                $('.offer_bottom_ok .l').eq(j).html(data[i+3]);
+                $('.offer_bottom_ok .t').eq(j).html(data[i+2]);
+             }
+
+            }});
+            }
+            knowlege();
+
+    </script>
+        <!-- /* 所学到的知识 */ -->
+        <div class="show_right">
+           <section>
+            <p class="study_title"></p>
+            <p class="study_middle">
+              <span class='span1'></span>
+              <span class='4'></span>
+            </p>
+             <div class="offer_bottom_ok"><span>浏览  <label for="" class='l'></label></span><span>推荐 <label for="" class='t'></label></span><span style="cursor:pointer;"><a style="text-decoration: none;color:#4F94CD;" href="./xiangqing/xiangqing.php?id=293">阅读全文</a></span></div>
+          </section>
+
+          <!-- 2 -->
+          <section>
+            <p class="study_title"></p>
+            <p class="study_middle">
+              <span class='span1'></span>
+              <span class='4'></span>
+            </p>
+             <div class="offer_bottom_ok"><span>浏览  <label for="" class='l'></label></span><span>推荐 <label for="" class='t'></label></span><span style="cursor:pointer;"><a style="text-decoration: none;color:#4F94CD;" href="./xiangqing/xiangqing.php?id=273">阅读全文</a></span></div>
+          </section>
+
+          <!-- 3 -->
+          <section>
+            <p class="study_title"></p>
+            <p class="study_middle">
+              <span class='span1'></span>
+              <span class='4'></span>
+            </p>
+             <div class="offer_bottom_ok"><span>浏览  <label for="" class='l'></label></span><span>推荐 <label for="" class='t'></label></span><span style="cursor:pointer;"><a style="text-decoration: none;color:#4F94CD;" href="./xiangqing/xiangqing.php?id=284">阅读全文</a></span></div>
+          </section>
+
+          <!-- 4 -->
+          <section>
+            <p class="study_title"></p>
+            <p class="study_middle">
+              <span class='span1'></span>
+              <span class='4'></span>
+            </p>
+            <div class="offer_bottom_ok"><span>浏览  <label for="" class='l'></label></span><span>推荐 <label for="" class='t'></label></span><span style="cursor:pointer;"><a style="text-decoration: none;color:#4F94CD;" href="./xiangqing/xiangqing.php?id=257">阅读全文</a></span></div>
+          </section>
+        </div>
+    </section>
+
+  </article>
+  </div>
+
+  
+
+<!-- ================================================================== -->
+<!-- +++++++++++++++++++++++++  第五板块的ajax  +++++++++++++++++++++++ -->
+<!-- ================================================================== -->
+<script>
+  function star(){
+               $.ajax({
+                url:'ajax/star.php',
+                type:'post',
+                data:{'id':'226'},
+                dataType:'json',
+                success:function(data){
+                 for(var i=0,j=0;i<data.length;i+=2,j++)
+                 {
+                  $('.star_top').eq(j).html(data[i][0]);
+                  $('.star_middle .name').eq(j).html(data[i+1]);
+                  $('.star_middle .star_text').eq(j).html(data[i][1]);
+                  $('.star_bottom').eq(j).html(data[i][2]);
+                 }
+
+                }});
+            }
+  star();
+</script>
+  <!-- 第五个板块 -->
+  <div style='background-color:#7ad1fe;width:100%;height:500px;'>
+    <article class="five">
+      <!-- 板块开头 -->
+      <div class="top1">
+          <section class="xian "></section>
+          <section class="center">学苑明星老师</section>
+          <section class="xian "></section>
+      </div>
+    
+
+      <!-- 中间文字展示 -->
+      <div class="top2"></div>
+      
+      <section class="star">
+        <ul>
+          <!-- 第一位 -->
+          <li>
+            <section class="star_top"></section>
+
+            <section class="star_nr">
+              <section class="star_middle">
+                <p class="name"></p>
+                <p class="star_text"></p>
+              </section>
+
+              <section class="star_bottom">
+                
+              </section>
+            </section>
+          </li>
+
+          <!-- 第二位 -->
+          <li>
+            <section class="star_top"></section>
+
+            <section class="star_nr">
+              <section class="star_middle">
+                <p class="name"></p>
+                <p class="star_text"></p>
+              </section>
+
+              <section class="star_bottom">
+               
+              </section>
+            </section>
+          </li>
+
+          <!-- 第三位 -->
+          <li>
+            <section class="star_top"></section>
+
+            <section class="star_nr">
+              <section class="star_middle">
+                <p class="name"></p>
+                <p class="star_text"></p>
+              </section>
+
+              <section class="star_bottom"></section>
+            </section>
+          </li>
+
+          <!-- 第四位 -->
+          <li>
+            <section class="star_top"></section>
+
+            <section class="star_nr">
+              <section class="star_middle">
+                <p class="name"></p>
+                <p class="star_text"></p>
+              </section>
+
+              <section class="star_bottom">
+              </section>
+            </section>
+          </li>
+
+          <!-- 第五位 -->
+          <li>
+            <section class="star_top"></section>
+            <section class="star_nr">
+              <section class="star_middle">
+                <p class="name"></p>
+                <p class="star_text"></p>
+              </section>
+              <section class="star_bottom">
+              </section>
+            </section>
+          </li>
+        </ul>
+      </section>
+
+    </article>
+  </div>
+
+
+
+  <!-- 第六个板块 -->
+      <!-- 底部 -->
+<!-- ================================================================== -->
+<!-- +++++++++++++++++++++++++  第六板块的ajax  +++++++++++++++++++++++ -->
+<!-- ================================================================== -->
+<script>
+  $(document).ready(function(){
+    function datu(){
+            $.ajax({
+            url:'ajax/datu.php',
+            type:'post',
+            data:{'id':'225'},
+            dataType:'json',
+            success:function(data){
+              $('#demo1 li:eq(0)').html(data[0]['content']);
+              $('#demo1 li:eq(1)').html(data[1]['content']);
+              $('#demo1 li:eq(2)').html(data[2]['content']);
+              $('#demo1 li:eq(3)').html(data[0]['content']);
+
+              $('#demo2 li:eq(0)').html(data[0]['content']);
+              $('#demo2 li:eq(1)').html(data[1]['content']);
+              $('#demo2 li:eq(2)').html(data[2]['content']);
+              $('#demo2 li:eq(3)').html(data[0]['content']);
+            }});
+            }
+            datu();
+  });
+  
+</script>
+
+  <div class="footer">
+  <div class="container">
+    <div class="footer-main">
+      <div class="col-md-4 ftr-grid wow zoomIn" data-wow-delay="0.3s">
+        <h3>Coaching</h3>
+        <span class="ftr-line"> </span>
+        <div style='float:left;margin-left:8em;'>
+          <p>聚是一团火</p>
+          <p>散是满天星 </p>
+        </div>
+      </div>
+      <div class="col-md-4 ftr-grid ftr-mid wow zoomIn" data-wow-delay="0.3s">
+         <h3>Social Media</h3>
+         <span class="ftr-line flm"> </span>
+         <ul >
+          <li><a href="./mobile/mobile1.html"><span class="gmail" style='margin-left:20px;width:auto;'> 移动端1</span></a></li>
+          <li><a href="./mobile/mobile2.html"><span class="gmail" style='margin-left:20px;width:auto;'> 移动端2</span></a></li>
+          <li><a href="./mobile/mobile3.html"><span class="gmail" style='margin-left:20px;width:auto;'> 移动端3</span></a></li> </ul>
+          <ul>
+          <li><a href="./bootstrap1/bootstrap1.html"><span class="gmail" style='margin-left:20px;width:auto;'> 响应式1</span></a></li>
+          <li><a href="./bootstrap2/bootstrap2.html"><span class="gmail" style='margin-left:20px;width:auto;'> 响应式2</span></a></li>
+        </ul>
+      </div>
+      <div class="col-md-4 ftr-grid ftr-rit wow zoomIn" data-wow-delay="0.3s">
+         <h3>Address</h3>
+         <span class="ftr-line flr"> </span>
+         <div style="float: right;margin-right:8.5em; ">
+           <p>工行二楼</p>
+           <p> 宝文理向西50米处</p>
+         </div>
+      </div>
+      <div class="clearfix"> </div>
+    </div>
+  </div>
+  </div>
+
+  
+  <!-- 右边工具 -->
+    <div id="weixin_show">
+        <input id="text" type="text" value="请扫二维码" style="width:80%;font-family:隶书;color:#F69;font-size:12px;"/>
+        <section class="weixin_hr"></section>
+        <section id="weixin_show1">
+            <div id="qrcode" style="width:100px; height:100px; margin-top:15px;">
+              <img src="images/weixin.png" alt="">
+            </div>
+        </section>
+    </div>
+
+
+    <div class="copy-right">
+  <div class="container">
+    <div class="copy-rights-main wow zoomIn" data-wow-delay="0.3s">
+          <p>© 2018 Coaching. All Rights Reserved | Made by  <a href="http://w3layouts.com/" target="_blank">MC</a> </p>
+       </div>
+    </div>
+    <a href="#" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
+
+  </div>
+  
+
+<!-- 右边工具 -->
+  <div id="weixin_show">
+    <input id="text" type="text" value="输入信息，自制二维码" style="width:80%;font-family:隶书;color:#F69;font-size:12px;"/>
+    <section class="weixin_hr"></section>
+    <section id="weixin_show1">
+        <div id="qrcode" style="width:100px; height:100px; margin-top:15px;"></div>
+    </section>
+  </div>
+
+  <div class="anniu">
+    <section class="work">
+      <img src="forth/images/message.jpg" alt="">
+      <span id="message">意见反馈</span>
+      <div class="work_hr"> </div>
+    </section>
+      <section class="work">
+      <img src="forth/images/trouble.jpg" alt="">
+      <span id="trouble">常见问题</span>
+      <div class="work_hr"> </div>
+    </section>
+    <section id="weixin" class="work">
+      <img src="forth/images/weixin2.jpg" alt="">
+      <div class="work_hr"></div>
+    </section>
+    <section id="return" class="work">
+      返回顶部
+      <div class="work_hr"> </div>
+    </section>
+  </div>
+
+  <script src="js/move.js"></script>            <!--明星 -->
+  <script src="forth/js/return.js"></script>    <!--返回顶部-->
+  <script src="js/work.js"></script>            <!--右边工具栏-->
+
+
+  <script type="text/javascript" src="js/mc2.js"></script>
+  <script type="text/javascript" src="js/mc3.js"></script>
+
+  <script src="js/third.js"></script>
+
+  <!-- 画廊 -->
+  <script src="js/data.js"></script>
+  <script src="js/index.js"></script>
+</body>
+</html>

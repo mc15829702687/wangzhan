@@ -1,0 +1,22 @@
+*{
+  margin:0px;
+  padding:0px;
+}
+li{
+  text-decoration: none;
+  list-style: none;
+  
+}
+#main{
+  width:500px;
+  height:800px;
+  background:yellow;
+  margin:0 auto;
+  border:2px;
+}
+header{
+  width:500px;
+}
+header img{
+  width:350px;
+}

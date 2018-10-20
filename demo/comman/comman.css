@@ -1,0 +1,87 @@
+/* 底部 */
+.footer {
+    padding: 5em 0em;
+}
+.ftr-grid h3 {
+    font-size: 2em;
+    color: #000;
+    font-family: 'Oswald', sans-serif;
+}
+.ftr-grid p{
+    font-size:1em;
+    color:#7B7B7B;
+    line-height: 1.7em;
+}
+span.ftr-line {
+    background: #807D7D;
+    width: 60px;
+    height: 1px;
+    display: block;
+    margin: 1.5em 10em;
+}
+span.flm {
+   text-align: center;
+   margin: 1.5em auto;
+}
+span.flr {
+    text-align: right;
+    margin: 1.5em 0em 1.5em 14.5em;
+}
+.ftr-mid {
+    text-align: center;
+}
+.ftr-rit {
+    text-align: right;
+}
+.ftr-grid ul {
+    padding: 0px;
+    list-style: none;
+}
+.ftr-grid ul li {
+    display: inline-block;
+    margin: 0px 10px 0px 0px;
+}
+.ftr-grid ul li a span {
+    background: url(../images/ftr-icons.png)no-repeat;
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+}
+.ftr-grid ul li a span.fa {
+    background-position: 0px 0px;
+}
+.ftr-grid ul li a span.tw {
+    background-position: -42px 0px;
+}
+.ftr-grid ul li a span.gmail {
+    background-position: -84px 0px;
+}
+
+.ftr-grid ul li a span.fa:hover {
+    background-position: 0px 0px;
+    opacity: 0.8;
+}
+.ftr-grid ul li a span.tw:hover{
+    background-position: -42px 0px;
+    opacity: 0.8;
+}
+.ftr-grid ul li a span.gmail:hover {
+    background-position: -84px 0px;
+    opacity: 0.8;
+}
+/*--footer end here--*/
+.copy-right {
+    background:rgb(0, 188, 212);;
+    padding: 1.5em 0em;
+    text-align: center;
+}
+.copy-rights-main p{
+  font-size:1em;
+  color:#fff;
+}
+.copy-rights-main p a{
+  color:#fff;
+}
+.copy-rights-main p a:hover{
+  color:#000;
+}

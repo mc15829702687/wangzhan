@@ -1,0 +1,265 @@
+*,a{
+  padding:0px;
+  margin:0px;
+  list-style: none;
+  text-decoration: none;
+}
+
+body{
+  font-size: "微软雅黑";
+}
+
+.main{
+  float:left;
+  width:100%;
+  background:#f5f6f7;
+  padding:60px;
+}
+/* 左侧栏 */
+.left{
+  width:73%;
+  height:auto;
+  float:left;
+  background-color: rgb(255, 255, 255);
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 2px 4px 0px;
+  box-sizing: border-box;
+  color: rgb(51, 51, 51);
+  font-family: "SF Pro Display", Roboto, Noto, Arial, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+  font-size: 14px;
+  line-height: 22px;
+  padding-bottom: 16px;
+  padding-left: 24px;
+  padding-right: 24px;
+  position: relative;
+}
+/* 右侧栏 */
+.right{
+  width:25%;
+  float:left;
+  margin-left:20px;
+}
+
+/* 最新文章 */
+.aside-box{
+  background-color: rgb(255, 255, 255);
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 2px 4px 0px;
+  box-sizing: border-box;
+  color: rgb(51, 51, 51);
+  font-family: "SF Pro Display", Roboto, Noto, Arial, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+  font-size: 14px;
+  line-height: 22px;
+  margin-bottom: 8px;
+  
+}
+/* 标题 */
+.aside-box h4{
+  box-sizing: border-box;
+  color: rgb(51, 51, 51);
+  font-family: "SF Pro Display", Roboto, Noto, Arial, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+  font-size: 14px;
+  line-height: 22px;
+  padding-left: 16px;
+  padding-right: 16px;
+  padding-top: 16px;
+  text-align:left;
+}
+/* 下划线 */
+.aside-box h4 span{
+  background-color: rgb(202, 12, 22);
+  box-sizing: border-box;
+  color: rgb(51, 51, 51);
+  content: "";
+  display: inline-block;
+  font-family: "SF Pro Display", Roboto, Noto, Arial, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+  font-size: 14px;
+  height: 22px;
+  line-height: 22px;
+  margin-right: 8px;
+  outline-color: rgb(51, 51, 51);
+  outline-style: none;
+  outline-width: 0px;
+  vertical-align: -6px;
+  width: 4px;
+}
+/* 内容 */
+.aside-content{
+  box-sizing: border-box;
+  color: rgb(51, 51, 51);
+  font-family: "SF Pro Display", Roboto, Noto, Arial, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+  font-size: 14px;
+  line-height: 22px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 0px;
+  outline-color: rgb(51, 51, 51);
+  outline-style: none;
+  outline-width: 0px;
+  overflow: hidden;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  padding-bottom: 16px;
+  padding-left: 16px;
+  padding-right: 16px;
+  padding-top: 16px;
+}
+.aside-box ul{
+  box-sizing: border-box;
+  color: rgb(51, 51, 51);
+  font-family: "SF Pro Display", Roboto, Noto, Arial, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+  font-size: 14px;
+  line-height: 22px;
+  margin-right: 0px;
+  margin-top: -8px;
+}
+.aside-box ul li{
+  display:block;
+  box-sizing: border-box;
+  color: rgb(51, 51, 51);
+  font-family: "SF Pro Display", Roboto, Noto, Arial, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+  font-size: 14px;
+  line-height: 22px;
+  margin-top: 8px;
+  outline-color: rgb(51, 51, 51);
+  outline-style: none;
+  cursor: pointer;
+}
+.aside-box ul li a{
+  box-sizing: border-box;
+  color: rgb(51, 51, 51);
+  cursor: pointer;
+  display: block;
+  font-family: "SF Pro Display", Roboto, Noto, Arial, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+  font-size: 14px;
+  line-height: 22px;
+  list-style-image: none;
+  list-style-position: outside;
+  list-style-type: none;
+  outline-color: rgb(51, 51, 51);
+  outline-style: none;
+  outline-width: 0px;
+  text-decoration: none;
+  text-decoration-color: rgb(51, 51, 51);
+  text-decoration-line: none;
+  text-decoration-style: solid;
+  word-break: break-all;
+}
+
+/* 阅读量 */
+.read{
+  box-sizing: border-box;
+  color: rgb(133, 133, 133);
+  font-family: "SF Pro Display", Roboto, Noto, Arial, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+  font-size: 12px;
+  line-height: 20px;
+  list-style-image: none;
+  list-style-position: outside;
+  outline-color: rgb(133, 133, 133);
+  
+}
+.read span{
+  box-sizing: border-box;
+  color: rgb(133, 133, 133);
+  font-family: "SF Pro Display", Roboto, Noto, Arial, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+  font-size: 12px;
+  line-height: 20px;
+  list-style-image: none;
+  list-style-position: outside;
+  list-style-type: none;
+  outline-color: rgb(133, 133, 133);
+  outline-style: none;
+  outline-width: 0px;
+  word-break: break-all;
+}
+/* 时间 */
+.time{
+  box-sizing: border-box;
+  color: rgb(133, 133, 133);
+  cursor: pointer;
+  float: right;
+  font-family: "SF Pro Display", Roboto, Noto, Arial, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+  font-size: 12px;
+  line-height: 18.85px;
+  list-style-image: none;
+  list-style-position: outside;
+  list-style-type: none;
+  outline-color: rgb(133, 133, 133);
+  outline-style: none;
+  outline-width: 0px;
+  word-break: break-all;
+}
+/* 右侧栏标题 */
+.article-header-box{
+  background-color: rgb(255, 255, 255);
+  border-bottom-color: rgb(224, 224, 224);
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  box-sizing: border-box;
+  color: rgb(51, 51, 51);
+  font-family: "SF Pro Display", Roboto, Noto, Arial, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+  font-size: 14px;
+  line-height: 22px;
+  padding-top: 16px;
+  z-index: 9;
+}
+.article-titlie-box{
+  box-sizing: border-box;
+  color: rgb(51, 51, 51);
+  font-family: "SF Pro Display", Roboto, Noto, Arial, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+  font-size: 14px;
+  line-height: 22px;
+  margin-bottom: 8px;
+}
+
+.title-article{
+  box-sizing: border-box;
+  color: rgb(51, 51, 51);
+  font-size: 24px;
+  line-height: 37.7167px;
+  text-align:left;
+}
+.article-info-box{
+  box-sizing: border-box;
+  color: rgb(51, 51, 51);
+  font-size: 14px;
+  line-height: 22px;
+  padding-bottom: 14px;
+}
+.time_1{
+  box-sizing: border-box;
+  color: rgb(133, 133, 133);
+  line-height: 22px;
+  margin-right: 14px;
+}
+.name{
+  box-sizing: border-box;
+  color: rgb(120, 165, 241);
+  cursor: pointer;
+  line-height: 22px;
+  margin-right: 14px;
+}
+/* 阅读量 */
+.read_count{
+  box-sizing: border-box;
+  color: rgb(133, 133, 133);
+  font-size: 14px;
+  line-height: 22px;
+  margin-right: 14px;
+  outline-color: rgb(133, 133, 133);
+}
+/*右边工具栏*/
+.anniu{
+  z-index: 1000;
+  width: 38px;
+  height: 45px;
+/*   padding:10px; */
+  border: 1px solid #ccc;
+  position: fixed;
+  right: 0px;
+  bottom:10px; 
+/*   background:white; */
+  box-shadow: 10px 10px 5px #888888;
+}
+
+
+
